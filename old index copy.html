@@ -8,220 +8,89 @@
   </head>  
 
   <body class="bg-gray-100">  
-    <!-- Desktop browser menu -->  
+    <!-- Header -->  
     <header class="flex items-center justify-between p-4 bg-white shadow">  
-      <img src="images/ic-logo.svg" alt="Colmar Academy logo desktop" class="h-10" />  
+      <img src="images/ic-logo.svg" alt="Colmar Academy logo" class="h-10" />  
       <p class="text-xl font-bold"><strong>COLMAR</strong> ACADEMY</p>  
-      <div id="menu" class="space-x-4">  
+      <div class="hidden md:flex space-x-4">  
         <a href="#" class="text-gray-700 hover:text-blue-500">On campus</a>  
         <a href="#" class="text-gray-700 hover:text-blue-500">Online</a>  
         <a href="#" class="text-gray-700 hover:text-blue-500">For companies</a>  
         <a href="#" class="text-gray-700 hover:text-blue-500">Sign in</a>  
       </div>  
-    </header>  
-
-    <!-- Mobile menu -->  
-    <header id="menu-mobile" class="flex items-center justify-between p-4 bg-white shadow md:hidden">  
-      <a href="#"><img src="images/ic-logo.svg" alt="Colmar Academy logo mobile" class="h-10" /></a>  
-      <div class="flex space-x-2">  
-        <a href="#"><img src="images/ic-on-campus.svg" alt="Colmar Academy logo on-campus" class="h-8" /></a>  
-        <a href="#"><img src="images/ic-online.svg" alt="Colmar Academy logo online" class="h-8" /></a>  
-        <a href="#"><img src="images/ic-login.svg" alt="Colmar Academy logo login" class="h-8" /></a>  
+      <div class="md:hidden flex space-x-2">  
+        <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-500">  
+          <img src="images/ic-menu.svg" alt="Menu" class="h-8" />  
+        </button>  
       </div>  
     </header>  
 
-    <!-- Top Banner Desktop -->  
-    <article id="banner-container" class="relative">  
+    <!-- Top Banner -->  
+    <article class="relative">  
       <img src="images/banner.jpg" alt="Reading Book" class="w-full h-auto" />  
-      <div id="banner-text" class="absolute inset-0 flex flex-col items-center justify-center text-center bg-black bg-opacity-50 text-white p-4">  
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-black bg-opacity-50 text-white p-4">  
         <h1 class="text-3xl font-bold">Learn something new every day</h1>  
         <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
         <button type="button" class="mt-4 px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Start here</button>  
       </div>  
     </article>  
 
-    <!-- Top Banner Mobile -->  
-    <article id="banner-container-mobile" class="relative md:hidden">  
-      <img src="images/banner.jpg" alt="Reading Book" class="w-full h-auto" />  
-      <div id="banner-mobile-text" class="absolute inset-0 flex flex-col items-center justify-center text-center bg-black bg-opacity-50 text-white p-4">  
-        <h1 class="text-3xl font-bold">Learn something new every day</h1>  
-        <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
-        <button type="button" class="mt-4 px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Start here</button>  
-      </div>  
-    </article>  
-
-    <!-- Information Desktop -->  
-    <article id="content" class="flex flex-col md:flex-row p-4">  
-      <div id="content-left" class="flex-1 p-4">  
+    <!-- Information Section -->  
+    <article class="flex flex-col md:flex-row p-4">  
+      <div class="flex-1 p-4">  
         <img src="images/information-main.jpg" alt="A man reading book" class="w-full h-auto" />  
         <h2 class="text-2xl font-semibold mt-2">It doesn't hurt to keep practicing</h2>  
-        <p class="mt-2">  
-          "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"  
-        </p>  
+        <p class="mt-2">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque."</p>  
         <p class="mt-4 font-semibold">Emanuel, Sr Strategist at Hiring.com</p>  
       </div>  
-      <div id="content-right" class="flex-1 p-4 space-y-4">  
+      <div class="flex-1 p-4 space-y-4">  
         <div class="bg-white shadow rounded p-4">  
           <img src="images/information-orientation.jpg" alt="Walking people" class="w-full h-auto" />  
-          <div class="content-right-text">  
-            <h2 class="text-xl font-semibold">Orientation date</h2>  
-            <p>Tue 10/11 & Wed 10/12 : 8am-3pm</p>  
-            <p class="text-blue-500 cursor-pointer">Read more</p>  
-          </div>  
+          <h2 class="text-xl font-semibold">Orientation date</h2>  
+          <p>Tue 10/11 & Wed 10/12 : 8am-3pm</p>  
+          <p class="text-blue-500 cursor-pointer">Read more</p>  
         </div>  
         <div class="bg-white shadow rounded p-4">  
           <img src="images/information-campus.jpg" alt="A meeting room" class="w-full h-auto" />  
-          <div class="content-right-text">  
-            <h2 class="text-xl font-semibold">Our campus</h2>  
-            <p>Find which campus is close by you</p>  
-            <p class="text-blue-500 cursor-pointer">Read more</p>  
-          </div>  
+          <h2 class="text-xl font-semibold">Our campus</h2>  
+          <p>Find which campus is close by you</p>  
+          <p class="text-blue-500 cursor-pointer">Read more</p>  
         </div>  
         <div class="bg-blue-100 shadow rounded p-4">  
           <img src="images/information-guest-lecture.jpg" alt="Lecturer" class="w-full h-auto" />  
-          <div class="content-right-text">  
-            <h2 class="text-xl font-semibold">Our guest Lecture</h2>  
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>  
-            <p class="text-blue-500 cursor-pointer">Read more</p>  
-          </div>  
+          <h2 class="text-xl font-semibold">Our guest Lecture</h2>  
+          <p>Join a keynote with Oliver Sack about music in medical treatment</p>  
+          <p class="text-blue-500 cursor-pointer">Read more</p>  
         </div>  
       </div>  
     </article>  
 
-    <!-- Information Mobile -->  
-    <article id="content-mobile" class="md:hidden p-4 space-y-4">  
-      <img src="images/information-orientation-mobile.jpg" alt="Walking people" class="w-full h-auto" />  
-      <div class="content-mobile-text">  
-        <h2 class="text-xl font-semibold">Orientation date</h2>  
-        <p>Tue 10/11 & Wed 10/12 : 8am-3pm</p>  
-        <p class="text-blue-500 cursor-pointer">Read more</p>  
-      </div>  
-      <img src="images/information-campus-mobile.jpg" alt="A meeting room" class="w-full h-auto" />  
-      <div class="content-mobile-text">  
-        <h2 class="text-xl font-semibold">Our campus</h2>  
-        <p>Find which campus is close by you</p>  
-        <p class="text-blue-500 cursor-pointer">Read more</p>  
-      </div>  
-      <img src="images/information-guest-lecture-mobile.jpg" alt="Lecturer" class="w-full h-auto" />  
-      <div class="content-mobile-text">  
-        <h2 class="text-xl font-semibold">Our guest Lecture</h2>  
-        <p>Join a keynote with Oliver Sack about music in medical treatment</p>  
-        <p class="text-blue-500 cursor-pointer">Read more</p>  
-      </div>  
-    </article>  
-
-    <!-- Start learning -->  
-    <article id="start-learning" class="p-4">  
+    <!-- Start Learning Section -->  
+    <article class="p-4">  
       <h2 class="text-2xl font-semibold">Start learning</h2>  
-      <div id="start-learning-line1" class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">  
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">  
         <div class="bg-white shadow rounded p-4">  
           <img src="images/course-software.jpg" alt="Computer" class="w-full h-auto" />  
-          <div class="start-learning-text">  
-            <h2 class="text-xl font-semibold">Software engineering</h2>  
-            <p>COURSES</p>  
-            <p>Web Development, Mobile Development, iOT, APIs</p>  
-          </div>  
+          <h2 class="text-xl font-semibold">Software engineering</h2>  
+          <p>COURSES: Web Development, Mobile Development, iOT, APIs</p>  
         </div>  
-        <div id="start-learning-line1-center" class="bg-white shadow rounded p-4">  
+        <div class="bg-white shadow rounded p-4">  
           <img src="images/course-computer-art.jpg" alt="Mobile Phones" class="w-full h-auto" />  
-          <div class="start-learning-text">  
-            <h2 class="text-xl font-semibold">Computer art</h2>  
-            <p>COURSES</p>  
-            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>  
-          </div>  
+          <h2 class="text-xl font-semibold">Computer art</h2>  
+          <p>COURSES: Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>  
         </div>  
         <div class="bg-white shadow rounded p-4">  
           <img src="images/course-design.jpg" alt="Photography" class="w-full h-auto" />  
-          <div class="start-learning-text">  
-            <h2 class="text-xl font-semibold">Design</h2>  
-            <p>COURSES</p>  
-            <p>User Experience Design, User Research, Visual Design</p>  
-          </div>  
+          <h2 class="text-xl font-semibold">Design</h2>  
+          <p>COURSES: User Experience Design, User Research, Visual Design</p>  
         </div>  
       </div>  
-      <div id="start-learning-line2" class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">  
-        <div class="bg-white shadow rounded p-4">  
-          <img src="images/course-data.jpg" alt="Data Science" class="w-full h-auto" />  
-          <div class="start-learning-text">  
-            <h2 class="text-xl font-semibold">Data</h2>  
-            <p>COURSES</p>  
-            <p>Data Science, Big Data, SQL, Data Visualization</p>  
-          </div>  
-        </div>  
-        <div id="start-learning-line2-center" class="bg-white shadow rounded p-4">  
-          <img src="images/course-business.jpg" alt="Chess" class="w-full h-auto" />  
-          <div class="start-learning-text">  
-            <h2 class="text-xl font-semibold">Business</h2>  
-            <p>COURSES</p>  
-            <p>Product Development, Business Development, Startup</p>  
-          </div>  
-        </div>  
-        <div class="bg-white shadow rounded p-4">  
-          <img src="images/course-marketing.jpg" alt="Smart Watch" class="w-full h-auto" />  
-          <div class="start-learning-text">  
-            <h2 class="text-xl font-semibold">Marketing</h2>  
-            <p>COURSES</p>  
-            <p>Analytics, Content Marketing, Mobile Marketing</p>  
-          </div>  
-        </div>  
-      </div>  
-    </article>  
-
-    <!-- Start learning Mobile -->  
-    <article id="start-learning-mobile" class="md:hidden p-4">  
-      <h1 class="text-2xl font-semibold">Start Learning</h1>  
-      <p>Software engineering</p>  
-      <p>Computer art</p>  
-      <p>Design</p>  
-      <p>Data</p>  
-      <p>Business</p>  
-      <p>Marketing</p>  
-    </article>  
-
-    <!-- Thesis Desktop -->  
-    <h1 class="thesis-title text-2xl font-semibold p-4">Thesis exhibit</h1>  
-    <article id="thesis" class="flex flex-col md:flex-row p-4">  
-      <div id="thesis-left" class="flex-1 p-4">  
-        <video src="./videos/thesis.mp4" class="w-full h-auto" controls>  
-          Video not supported  
-        </video>  
-        <div id="thesis-left-text" class="mt-2">  
-          <h2 class="text-xl font-semibold">Reimagine urban</h2>  
-          <p>  
-            "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula"  
-          </p>  
-        </div>  
-      </div>  
-      <div id="thesis-right" class="flex-1 p-4 space-y-4">  
-        <div id="thesis-right1" class="bg-white shadow rounded p-4">  
-          <img src="images/thesis-fisma.jpg" alt="Planning" class="w-full h-auto" />  
-          <div class="thesis-right-text">  
-            <h3 class="text-lg font-semibold">Fisma: Design and Prototype</h3>  
-            <p>Designer showcase of new prototype product</p>  
-          </div>  
-        </div>  
-        <div id="thesis-right2" class="bg-white shadow rounded p-4">  
-          <img src="images/thesis-now-and-then.jpg" alt="New York" class="w-full h-auto" />  
-          <div class="thesis-right-text">  
-            <h3 class="text-lg font-semibold">Now and then</h3>  
-            <p>Research study about New York</p>  
-          </div>  
-        </div>  
-      </div>  
-    </article>  
-
-    <!-- Thesis Mobile -->  
-    <article id="thesis-mobile" class="md:hidden p-4">  
-      <h1 class="text-2xl font-semibold">Thesis exhibits</h1>  
-      <video src="./videos/thesis.mp4" class="w-full h-auto" controls>  
-        Video not supported  
-      </video>  
     </article>  
 
     <!-- Footer -->  
     <footer class="bg-white p-4 shadow mt-4">  
-      <p id="commercial" class="text-center">© 2016 Colmar Academy. All rights reserved</p>  
-      <div id="term" class="flex justify-center space-x-4 mt-2">  
+      <p class="text-center">© 2016 Colmar Academy. All rights reserved</p>  
+      <div class="flex justify-center space-x-4 mt-2">  
         <p class="text-blue-500 cursor-pointer">Terms</p>  
         <p class="text-blue-500 cursor-pointer">Privacy</p>  
       </div>  
